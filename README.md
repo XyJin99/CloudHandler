@@ -1,8 +1,8 @@
 # CloudHandler
-PyTorch codes for "[loudHandler: Unifying Satellite Video Cloud Detection and Removal in a Joint Framework]".
+PyTorch codes for "[CloudHandler: Unifying Satellite Video Cloud Detection and Removal in a Joint Framework]".
 
-Authors: Xianyu Jin, Qiangqiang Yuan*<br>, [Jiang He*](https://jianghe96.github.io/), [Yi Xiao](https://xy-boy.github.io/), and Liangpei Zhang
-Wuhan University
+Authors: Xianyu Jin, [Qiangqiang Yuan*](https://www.sgg.whu.edu.cn/info/1425/2104.htm), [Jiang He*](https://jianghe96.github.io/), [Yi Xiao](https://xy-boy.github.io/), and Liangpei Zhang <br>
+Wuhan University and Technical University of Munich
 
 ### Abstract
 >Cloud occlusions in satellite videos significantly degrade the visual quality and hinder their utility in downstream applications. To mitigate this issue, cloud detection and removal in satellite videos become vital, which have been scarcely studied yet. Related approaches typically adopt a cloud detection-removal pipeline, which often leads to limited interaction and suboptimal performance. In this paper, we investigate the possibility of simultaneous cloud detection and removal in satellite videos and propose CloudHandler, a novel joint framework to unify the two relevant tasks into a single end-to-end architecture. Elaborate modules are designed to fully explore the inter-frame spatial-temporal information and enable tightly-coupled interactions between the two tasks. Specifically, a lightweight pyramid temporal regroup detection (PTD) block is proposed to perform initial detection at a low computation cost. A detection-guided removal (DGR) block is introduced to leverage detection features as dual guidance to effectively capture and mitigate cloud-affected features. A feedback residual detection (FRD) block is conducted to perform posterior residual compensation to refine the initial
