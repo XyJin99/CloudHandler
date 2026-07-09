@@ -1,6 +1,4 @@
 # CloudHandler
-CloudHandler: Unifying Satellite Video Cloud Detection and Removal in a Joint Framework
-
 PyTorch codes for "[loudHandler: Unifying Satellite Video Cloud Detection and Removal in a Joint Framework]".
 
 Authors: Xianyu Jin, Qiangqiang Yuan*<br>, [Jiang He*](https://jianghe96.github.io/), [Yi Xiao](https://xy-boy.github.io/), and Liangpei Zhang
