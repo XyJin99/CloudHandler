@@ -80,7 +80,7 @@ If you find our work useful in your research, we would appreciate your citation.
 ```
 
 ## Our Related Works
-If you are interested in our work, here are two related works [VCDFormer] https://www.sciencedirect.com/science/article/pii/S1569843225001128) for satellite video cloud detection, and [RFE-VCR](https://www.sciencedirect.com/science/article/abs/pii/S092427162400248X) for satellite video cloud removal. Our CloudHandler is built upon the foundations of these previous studies. We would greatly appreciate your citation. 😊😊
+If you are interested in our work, here are two related works [VCDFormer](https://www.sciencedirect.com/science/article/pii/S1569843225001128) for satellite video cloud detection, and [RFE-VCR](https://www.sciencedirect.com/science/article/abs/pii/S092427162400248X) for satellite video cloud removal. Our CloudHandler is built upon the foundations of these previous studies. We would greatly appreciate your citation. 😊😊
 
 ```
 @article{jin2025vcdformer,
