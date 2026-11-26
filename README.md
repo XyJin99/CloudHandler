@@ -1,4 +1,4 @@
-# CloudHandler (TIP 2026)
+# CloudHandler (IEEE TIP 2026)
 ### 📖[**Paper**](https://ieeexplore.ieee.org/document/11724586)
 
 PyTorch codes for "[CloudHandler: Unifying Satellite Video Cloud Detection and Removal in a Joint Framework](https://ieeexplore.ieee.org/document/11724586)", **IEEE Transactions on Image Processing (TIP)**, 2026.
