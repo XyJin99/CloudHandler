@@ -14,7 +14,14 @@ detection features. A cross-domain joint loss is employed to boost training. Fur
  ![image](/figures/network.png)
 
 ## Environment
-We tested our environment compilation under two configurations. For details, please refer to the compilation process for envFor3090.txt(envFor3090.txt) (CUDA 11.8 on RTX 3090) and envFor5090.txt(envFor5090.txt) (CUDA 12.6 on RTX 5090).
+> * CUDA
+> * Python
+> * PyTorch
+> * Torchvision
+> * causal_conv1d
+> * mamba_ssm
+
+We tested our environment compilation under two configurations. For details, please refer to the compilation process for envFor3090.txt (CUDA 11.8 on RTX 3090) and envFor5090.txt (CUDA 12.6 on RTX 5090).
 
 ## Dataset Preparation
 We improved our previous work [VCDFormer](https://github.com/XyJin99/VCDFormer) to provide a valid benchmark for our joint cloud detection and removal framework.
