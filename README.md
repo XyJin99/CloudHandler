@@ -1,5 +1,7 @@
-# CloudHandler
-PyTorch codes for "[CloudHandler: Unifying Satellite Video Cloud Detection and Removal in a Joint Framework]".
+# CloudHandler (TIP 2026)
+### 📖[**Paper**](https://ieeexplore.ieee.org/document/11724586)
+
+PyTorch codes for "[CloudHandler: Unifying Satellite Video Cloud Detection and Removal in a Joint Framework](https://ieeexplore.ieee.org/document/11724586)", **IEEE Transactions on Image Processing (TIP)**, 2026.
 
 Authors: Xianyu Jin, [Qiangqiang Yuan*](https://www.sgg.whu.edu.cn/info/1425/2104.htm), [Jiang He*](https://jianghe96.github.io/), [Yi Xiao](https://xy-boy.github.io/), and Liangpei Zhang <br>
 Wuhan University and Technical University of Munich
@@ -11,11 +13,14 @@ detection features. A cross-domain joint loss is employed to boost training. Fur
 ### Overall
  ![image](/figures/network.png)
 
+## Environment
+We tested our environment compilation under two configurations. For details, please refer to the compilation process for envFor3090.txt(envFor3090.txt) (CUDA 11.8 on RTX 3090) and envFor5090.txt(envFor5090.txt) (CUDA 12.6 on RTX 5090).
+
 ## Dataset Preparation
 We improved our previous work [VCDFormer](https://github.com/XyJin99/VCDFormer) to provide a valid benchmark for our joint cloud detection and removal framework.
 Please download our dataset in 
- * Baidu Netdisk [WHU-SVideo]([https://pan.baidu.com/s/1AqluZurtZRixCZNwUVbVNQ?pwd=8u1g](https://pan.baidu.com/s/1z9vHvQX6ZcggRydDUV-WJQ)) Code: CHds
- * Zenodo: TODO
+ * Baidu Netdisk [WHU-SVideo](https://pan.baidu.com/s/1z9vHvQX6ZcggRydDUV-WJQ) Code: CHds
+ * Zenodo: Uploading...
 
 ## Training
 ```
@@ -54,6 +59,18 @@ Email: jin_xy@whu.edu.cn
 ## Citation
 If you find our work useful in your research, we would appreciate your citation. 😊😊
 ```
+@article{jin2026cloudhandler,
+  title={CloudHandler: Unifying Satellite Video Cloud Detection and Removal in a Joint Framework},
+  author={Jin, Xianyu and Yuan, Qiangqiang and He, Jiang and Xiao, Yi and Zhang, Liangpei},
+  journal={IEEE Transactions on Image Processing},
+  year={2026},
+  publisher={IEEE}
+}
+```
+
+## Our Related Works
+If you are interested in our work useful, please refer to [VCDFormer](https://www.sciencedirect.com/science/article/pii/S1569843225001128) for satellite video cloud detection and [RFE-VCR](https://www.sciencedirect.com/science/article/abs/pii/S092427162400248X) for satellite video cloud removal. We would appreciate your citation. 😊😊
+```
 @article{jin2025vcdformer,
   title={VCDFormer: Investigating cloud detection approaches in sub-second-level satellite videos},
   author={Jin, Xianyu and He, Jiang and Xiao, Yi and Lihe, Ziyang and Li, Jie and Yuan, Qiangqiang},
@@ -63,4 +80,16 @@ If you find our work useful in your research, we would appreciate your citation.
   year={2025},
   publisher={Elsevier}
 }
+
+@article{jin2024rfe,
+  title={RFE-VCR: Reference-enhanced transformer for remote sensing video cloud removal},
+  author={Jin, Xianyu and He, Jiang and Xiao, Yi and Lihe, Ziyang and Liao, Xusi and Li, Jie and Yuan, Qiangqiang},
+  journal={ISPRS Journal of Photogrammetry and Remote Sensing},
+  volume={214},
+  pages={179--192},
+  year={2024},
+  publisher={Elsevier}
+}
 ```
+## Acknowledgement
+Our work is built upon [MambaIR](https://github.com/csguoh/MambaIR). Thanks to the author for sharing this awesome work!
