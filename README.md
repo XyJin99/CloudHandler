@@ -34,11 +34,17 @@ python test.py --config=./config/test_model.json
 
 ### Quantitative results
 Cloud Detection Comparison
- ![image](/figures/qualitative.png)
- ![image](/figures/qualitative.png)
+ ![image](/figures/quanti_vcd.png)
+
+ Cloud Removal Comparison
+ ![image](/figures/quanti_vcr.png)
+ 
 ### Qualitative results
-![image](/figures/qualitative.png)
- ![image](/figures/qualitative.png)
+Cloud Detection Comparison
+ ![image](/figures/vcd.png)
+
+ Cloud Removal Comparison
+ ![image](/figures/vcr.png)
 #### More details can be found in our paper!
 
 ## Contact
