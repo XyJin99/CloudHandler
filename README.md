@@ -3,7 +3,7 @@
 
 PyTorch codes for "[CloudHandler: Unifying Satellite Video Cloud Detection and Removal in a Joint Framework](https://ieeexplore.ieee.org/document/11724586)", **IEEE Transactions on Image Processing (TIP)**, 2026.
 
-Authors: Xianyu Jin, [Qiangqiang Yuan*](https://www.sgg.whu.edu.cn/info/1425/2104.htm), [Jiang He*](https://jianghe96.github.io/), [Yi Xiao](https://xy-boy.github.io/), and Liangpei Zhang <br>
+Authors: Xianyu Jin, [Qiangqiang Yuan*](https://www.sgg.whu.edu.cn/info/1425/2104.htm), [Jiang He*](https://jianghe96.github.io/), [Yi Xiao](https://xy-boy.github.io/), and [Liangpei Zhang](https://www.zhangliangpei.cn/) <br>
 Wuhan University, Technical University of Munich, and Zhengzhou University
 
 ### Abstract
