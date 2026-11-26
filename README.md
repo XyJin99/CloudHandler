@@ -28,6 +28,8 @@ We improved our previous work [VCDFormer](https://github.com/XyJin99/VCDFormer) 
 Please download our dataset in 
  * Baidu Netdisk [WHU-SVideo](https://pan.baidu.com/s/1z9vHvQX6ZcggRydDUV-WJQ) Code: CHds
  * Zenodo: Uploading...
+Weights for the two variants (CHsf, CHmf) of CloudHandler are available at
+ * Baidu Netdisk [CloudHandler](https://pan.baidu.com/s/1x3-7F8srOKN1tZIxRzXX7g) Code: CHds
 
 ## Training
 ```
@@ -76,7 +78,8 @@ If you find our work useful in your research, we would appreciate your citation.
 ```
 
 ## Our Related Works
-If you are interested in our work useful, please refer to [VCDFormer](https://www.sciencedirect.com/science/article/pii/S1569843225001128) for satellite video cloud detection and [RFE-VCR](https://www.sciencedirect.com/science/article/abs/pii/S092427162400248X) for satellite video cloud removal. We would appreciate your citation. 😊😊
+If you are interested in our work, here are two related works [VCDFormer] https://www.sciencedirect.com/science/article/pii/S1569843225001128) for satellite video cloud detection, and [RFE-VCR](https://www.sciencedirect.com/science/article/abs/pii/S092427162400248X) for satellite video cloud removal. Our CloudHandler is built upon the foundations of these previous studies. We would greatly appreciate your citation. 😊😊
+
 ```
 @article{jin2025vcdformer,
   title={VCDFormer: Investigating cloud detection approaches in sub-second-level satellite videos},
