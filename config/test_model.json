@@ -1,0 +1,22 @@
+{
+    "gpu_devices": "1",
+    "seed": 1234,
+    "name": "real_exp(CHmf)_l3r5",
+    "modelpath": "experiments/CHmf.pth",
+    "test_data_loader": {
+        "path": "/ssd2/WHU-SVideo/realtest",
+        "filepath": "/ssd2/WHU-SVideo/realtest/realtest.json",
+        "mode": "realtest",
+        "w": 320,
+        "h": 320,
+        "neighbor_stride": 3,
+        "num_ref": 5,
+        "ref_type": "uniform",
+        "save_results" : 1,
+        "overlap": 0,
+        "visual" : 0
+    },
+    "model": {
+        "net": "CHmf"
+    }
+}

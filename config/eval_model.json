@@ -1,0 +1,24 @@
+{
+    "gpu_devices": "1",
+    "seed": 1234,
+    "name": "eval_exp(CHsf)_l1r5",
+    "modelpath": "experiments/CHsf.pth",
+    "test_data_loader": {
+        "path": "/ssd2/WHU-SVideo/Eval",
+        "filepath": "/ssd2/WHU-SVideo/Eval/eval.json",
+        "mode": "eval",
+        "w": 320,
+        "h": 320,
+        "neighbor_stride": 1,
+        "num_ref": 5,
+        "ref_type": "uniform",
+        "save_results" : 0,
+        "overlap": 0,
+        "visual" : 0,
+        "dia_mask": 0,
+        "mask_type": "refine"
+    },
+    "model": {
+        "net": "CHsf"
+    }
+}

@@ -1,0 +1,67 @@
+################################################
+from https://zhuanlan.zhihu.com/p/1993278142157169855
+Test on NVIDIA5090 CUDA12.6
+################################################
+
+conda create -n CHF python=3.10
+conda activate CHF
+
+conda install -c nvidia cuda-toolkit=12.8 -y
+export CUDA_HOME="$CONDA_PREFIX"
+export PATH="$CUDA_HOME/bin:$PATH"
+export LD_LIBRARY_PATH="$CUDA_HOME/lib64:$LD_LIBRARY_PATH"
+
+------------------------------------CHECK------------------------------------
+nvcc --version (12.8)
+gcc --version  (11.4.0)
+------------------------------------CHECK------------------------------------
+
+pip install torch==2.9.0 torchvision==0.24.0 torchaudio==2.9.0 --index-url https://download.pytorch.org/whl/cu128
+
+------------------------------------CHECK------------------------------------
+>>> torch.cuda.get_arch_list()
+['sm_70', 'sm_75', 'sm_80', 'sm_86', 'sm_90', 'sm_100', 'sm_120']
+------------------------------------CHECK------------------------------------
+
+pip install certifi==2023.11.17 \
+    charset-normalizer==3.3.2 \
+    einops==0.7.0 \
+    filelock==3.13.1 \
+    fsspec==2023.10.0 \
+    idna==3.6 \
+    jinja2==3.1.2 \
+    markupsafe==2.1.3 \
+    networkx==3.2.1 \
+    ninja==1.11.1.1 \
+    numpy==1.26.2 \
+    packaging==23.2 \
+    pillow==10.1.0 \
+    pyyaml==6.0.1 \
+    regex==2023.10.3 \
+    tqdm==4.66.1 
+pip install "apache-tvm-ffi==0.1.9"
+
+MAMBA_KEEP_CUDA_BUILD=TRUE python -m pip install --no-build-isolation -v \
+  "mamba-ssm @ git+https://github.com/state-spaces/mamba.git"
+  
+python -m pip install --no-build-isolation -v \
+  "causal-conv1d @ git+https://github.com/Dao-AILab/causal-conv1d.git"
+
+------------------------------------CHECK------------------------------------
+python test4mamba.py
+------------------------------------CHECK------------------------------------
+
+pip install opencv_python==4.12.0.88 \
+tensorboardx==2.6.4 \
+scikit-image==0.25.2 \
+matplotlib==3.10.6 \
+timm==1.0.20
+
+
+
+
+
+
+
+
+

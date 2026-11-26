@@ -1,0 +1,64 @@
+{
+    "gpu_devices": "1",
+    "seed": 1234,
+    "name": "Your_Exp_Name",
+    "train_data_loader": {
+        "path": "/ssd2/WHU-SVideo/Train",
+        "filepath": "/ssd2/WHU-SVideo/Train/train.json",
+        "w": 320,
+        "h": 320,
+        "num_local": 1,
+        "num_ref": 5,
+        "ref_type": "uniform",
+        "sup_type": "refine"
+    },
+    "test_data_loader": {
+        "path": "/ssd2/WHU-SVideo/Eval",
+        "filepath": "/ssd2/WHU-SVideo/Eval/eval.json",
+        "mode": "eval",
+        "w": 320,
+        "h": 320,
+        "neighbor_stride": 1,
+        "num_ref": 5,
+        "ref_type": "uniform",
+        "save_im_results" : 0,
+        "overlap": 0,
+        "visual": 0,
+        "mask_type": "refine"
+    },
+    "losses": {
+        "hole_weight": 1,
+        "valid_weight": 1,
+        "adversarial_weight": 0.01,
+        "GAN_LOSS": "hinge"
+    },
+    "model": {
+        "net": "CHsf",
+        "no_dis": 0
+    },
+    "trainer": {
+        "type": "Adam",
+        "beta1": 0.0,
+        "beta2": 0.99,
+        "lr": 2e-4,
+        "batch_size": 2,
+        "num_workers": 4,
+        "log_freq": 100,
+        "save_freq": 5000,
+        "stage": 5e4,
+        "iterations": 15e4,
+        "enlarge": 100000,
+        "scheduler": {
+            "type": "MultiStepLR",
+            "milestones": [
+                5e4,10e4
+            ],
+            "gamma": 0.1
+        },
+        "resume": 0,
+        "restore": 0,
+        "gen_path": ".",
+        "dis_path": ".",
+        "opt_path": "."
+    }
+}

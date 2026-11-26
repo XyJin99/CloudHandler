@@ -1,0 +1,26 @@
+################################################
+https://blog.csdn.net/qq_51411676/article/details/162544541
+Test on NVIDIA3090 CUDA11.8
+################################################
+
+conda create -n CH python=3.8
+conda activate CH
+pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 --index-url https://download.pytorch.org/whl/cu118
+
+------------------------------------CHECK------------------------------------
+python -c "import torch; print(torch.version.cuda)"
+11.8
+------------------------------------CHECK------------------------------------
+
+pip install causal_conv1d-1.3.0.post1+cu118torch2.4cxx11abiFALSE-cp38-cp38-linux_x86_64.whl
+pip install mamba_ssm-2.2.1+cu118torch2.4cxx11abiFALSE-cp38-cp38-linux_x86_64.whl
+
+------------------------------------CHECK------------------------------------
+python test4mamba.py
+------------------------------------CHECK------------------------------------
+
+pip install opencv_python \
+tensorboardx \
+scikit-image \
+matplotlib \
+timm
